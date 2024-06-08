@@ -13,8 +13,8 @@ variable "components" {
   }
 }
 variable "ami" {
-  default = ""
+  default = "ami-090252cbe067a9e58"
 }
 variable "vpc_security_group_ids" {
-  default = "[]"
+  default = "[sg-05035daeb4cb1fd3b]"
 }
