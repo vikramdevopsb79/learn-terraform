@@ -1,6 +1,6 @@
 variable "components" {
   default = {
-    frontend = {
+    Frontend = {
       instance_type = "t3.small"
     }
     backend = {
