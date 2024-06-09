@@ -21,7 +21,7 @@ data "aws_ami" "ami" {
   owners           = ["973714476881"]
 }
 
-# output "sg" {
-#   value = data.aws_security_group.allow-all
-# }
+output "sg" {
+  value = data.aws_security_group.allow-all
+}
 #  to check really data is getting or not  from the security group
