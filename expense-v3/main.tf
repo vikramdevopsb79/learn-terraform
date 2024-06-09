@@ -1,6 +1,6 @@
 resource "aws_instance" "ec2-nodes" {
   for_each = var.components
-  ami           = "ami-090252cbe067a9e58"
+  ami           = "ami-031d574cddc5"
   instance_type = each.value["instance_type"]
   vpc_security_group_ids = ["sg-05035daeb4cb1fd3b"]
   tags = {
@@ -22,5 +22,3 @@ resource "aws_instance" "ec2-nodes" {
      }
    }
  }
-
-#name based resource is creating this is for_each loop
