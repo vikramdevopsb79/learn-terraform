@@ -15,6 +15,7 @@ resource "aws_route53_record" "record" {
   ttl     = 30
   records = [aws_instance.node.private_ip]
 }
+
 resource "null_resource" "provisioner"{
   depends_on = [aws_route53_record.record]
   provisioner "local-exec" {
@@ -22,3 +23,4 @@ resource "null_resource" "provisioner"{
   }
 
 }
+# running remote-exec need to install ansible in remote nodes with connection and using inline command
