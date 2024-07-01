@@ -38,3 +38,7 @@ output "m" {
   value = var.m["course"]
   description = "course details are getting properly"
 }
+variable "env" {}
+output "env" {
+  value = var.env
+}
