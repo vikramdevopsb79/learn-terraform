@@ -13,14 +13,3 @@ variable "components" {
 }
 
 
-variable "fruits" {
-  default = {
-    apple = {}
-    banaana = {}
-    orange = {}
-
-  }
-}
-resource "null_resource" "test" {
-  for_each = var.fruits
-}
