@@ -8,3 +8,5 @@ fruits = {
     price = 20
   }
 }
+#list variable is
+fruits1 = ["apple", "banana", "kiwi", "sapota"]
