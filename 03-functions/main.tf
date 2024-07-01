@@ -8,5 +8,5 @@ output "fruitcount" {
   value = length(var.fruits1)
 }
 output "fruitindex" {
-  value = index(var.fruits1, 2)
+  value = index(var.fruits1, "kiwi")
 }
