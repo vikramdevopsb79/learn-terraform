@@ -35,6 +35,6 @@ variable "m" {
   }
 }
 output "m" {
-  value = var.m["course "]
+  value = var.m["course"]
   description = "course details are getting properly"
 }
