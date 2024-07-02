@@ -1,4 +1,4 @@
 variable "fruits" {}
 resource "null_resource" "test" {
-  count = var.fruits
+  count = length(var.fruits)
 }
