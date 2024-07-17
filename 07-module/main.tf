@@ -1,13 +1,16 @@
 module "main" {
   source = "./app"
-  fruits = var.fruits
+  //fruits = var.fruits
 
 }
-variable "fruits"{}
-output "test" {
-  value = module.main.test
-}
-
+# variable "fruits"{}
+# output "test" {
+#   value = module.main.test
+# }
+#
+# output "mo" {
+#   value = module.main.o
+# }
 output "mo" {
-  value = module.main.o
+  value = module.main.file_path
 }
