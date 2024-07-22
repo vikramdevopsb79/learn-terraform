@@ -8,7 +8,7 @@ resource "aws_instance" "ec2-nodes" {
 }
 resource "aws_route53_record" "record" {
   zone_id = var.zone_id
-  name    = "${var.name}-dev.vikramdevops.tech"
+  name    = "${var.name}-dev.vikramdevops.store"
   type    = "A"
   ttl     = 10
   records = [aws_instance.ec2-nodes.private_ip]
