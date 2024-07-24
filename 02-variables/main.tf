@@ -42,3 +42,18 @@ variable "env" {}
 output "env" {
   value = var.env
 }
+variable "mao" {
+  default = {
+    course = {
+      course1 = "devops"
+      course2 = "aws"
+    }
+    trainers = {
+      trainer1 = "siva"
+
+    }
+  }
+}
+output "m1" {
+  value = var.mao["course"]
+}
